@@ -1,0 +1,12 @@
+<h2 class="page-header">Patient Consultation</h2>
+<br>
+<% consultation.forEach(consultation => { %>
+    <div><%= consultation.patient_cin %></div>
+    <div><%= consultation.doctor_cin %></div>
+    <div><%= consultation.symptoms %></div>
+    <div><%= consultation.overview %></div>
+    <div><%= consultation.medication %></div>
+    <div><%= consultation.notes %></div>
+    <div><%= consultation.visit %></div>
+    <div>---------------------</div>
+<% }) %>

@@ -1,0 +1,17 @@
+<h2 class="page-header">Search Doctors</h2>
+<form action="/doctors" method="GET">
+      <label>Email</label>
+      <input type="text" name="email" value="<%= loginOptions.email %>">
+      <div class="form-row form-row-end btn-row">
+    <button class="btn btn-primary" type="submit">Search</button>
+</div>
+</form>
+<br>
+<% doctors.forEach(doctor => { %>
+    <div><%= doctor.first_name %></div>
+    <div><%= doctor.last_name %></div>
+    <div><%= doctor.email %></div>
+    <div><%= doctor.phone_number %></div>
+    <div>---------------------</div>
+
+<% }) %>
